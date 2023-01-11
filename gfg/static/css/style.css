@@ -1,0 +1,36 @@
+*{
+            
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+
+}
+.wrapper{
+    text-align: center;
+    border: 8px solid turquoise;
+    padding: 30px;
+    margin: 20px 150px;
+}
+.image{
+  
+   width: 100%;
+   min-height: 100vh;
+   background-position: center;
+   background-size: cover;
+   position: relative;
+  text-align: center;
+}
+.content{
+    text-align: center;
+    background-color: azure;
+}
+.head{
+    padding-top: 10px;
+    font-size: 35px;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 8px;
+}
+
