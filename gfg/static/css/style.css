@@ -13,11 +13,10 @@
     margin: 20px 150px;
 }
 .image{
-  
-   width: 100%;
-   min-height: 100vh;
+   background-color: black;
    background-position: center;
-   background-size: cover;
+   
+   background-size: contain;
    position: relative;
   text-align: center;
 }
@@ -32,5 +31,9 @@
 p{
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 8px;
+}
+.image1{
+    width: 90%; /*  we created the .image class for new*/
+    height: -10%;
 }
 
