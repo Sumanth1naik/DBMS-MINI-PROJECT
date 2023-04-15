@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <link rel="stylesheet" href="{% static 'css/inn.css' %}">
+    <script src="{% static 'js/inn.js' %}"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innovaters</title>
+</head>
+<body>
+ 
+  <section>
+    <!--for demo wrap-->
+    <h1>Funded Innovation through Cfund</h1>
+    <div class="tbl-header">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <thead>
+          <tr>
+            <th>Funder</th>
+            <th>Entrepreneur</th>
+            <th>Funding amount</th>
+          </tr>
+        </thead>
+      </table>
+    </div>
+    <div class="tbl-content">
+      <table cellpadding="0" cellspacing="0" border="0">
+        {%for i in ino%}
+        <tbody>
+          <td>{{i.name}}</td>
+          <td>{{i.email}}</td>
+          <td>{{i.phone}}</td>
+        </tbody>
+        {% endfor %}
+      </table>
+    </div>
+  </section>
+  
+  
+  <!-- follow me template -->
+  
+ 
+</body>
+</html>

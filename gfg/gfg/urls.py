@@ -24,4 +24,17 @@ urlpatterns = [
     path('signup',views.signup,name='signup'),
     path('signin',views.signin,name='signin'),
     path('signout',views.signout,name='signout'),
+    path('project',views.project,name='project'), #now i created this for project link
+    path('add',views.ADD,name='add'),
+    path('edit',views.EDIT,name='edit'),
+    path('Update/<str:id>',views.Update,name='Update'),
+    path('delete/<str:id>',views.delete,name="delete"),
+    path('inovate',views.inovate,name='inovate'),
+    path('donate',views.Donate,name='donate'),
+    path('fund',views.Fund,name='fund'),
+    path('addamt',views.addamt,name='AddAmt'),
+    path('donaters1',views.donaters1,name='donaters1'),
+    path('view',views.view,name='view'),
+    path('payment',views.payment,name='payment'),
+    path('addvalue',views.addvalue,name='addvalue'),
 ]

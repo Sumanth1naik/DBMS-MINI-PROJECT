@@ -1,14 +1,10 @@
-*{
-    text-align: center;
+*{text-align: center;
     font-family: verdana;
-    margin: 10px 10px;
+    margin: 10px 100px;
     padding-top: 10px;
-}
+    }
 
 .wrapper{
     border: 8px solid palegreen;
 
 }
-
-
-/* for signin */

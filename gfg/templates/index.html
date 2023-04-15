@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Authentication</title>
 
     <!-- this link is sreting for checking the file in the normal server-->
     <link rel="stylesheet" href="/gfg/static/css/style.css">
-  
+
+    <script src="{% static 'js/index1.js' %}"></script>
     
    
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
@@ -20,7 +22,80 @@
     </style>
 </head>
 <body>
-    <div class="wrapper">
+
+    <!--for dropdown-->
+
+<div class="mobile-container">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="#home" class="active">Logo</a>
+      <div id="myLinks">
+        <a href="/signin">Signin</a>
+        <a href="/signout">Signout</a>
+        <a href="/signup">Signup</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+    <div style="padding-left:16px">
+    </div>
+    
+    <!-- End smartphone / tablet look -->
+    </div>
+  <!--dropdown ends here-->
+
+<!-- now we are creting the some paragraph-->
+<!-- we are changing here-->
+
+
+<!--some side scrolling changes-->
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="{% static 'img/index1.jpg' %}" style="width:100%;height: 80vh">
+      {% if user.is_authenticated  %}
+      <div class="text"><button type="submit"><a href="/project">Share your Idea</a></button></div>
+      {% endif %}
+      
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="{% static 'img/idea.jpg' %}" style="width:100%;height: 80vh">
+      <div class="text">Your Idea matters <p><br></p></div>
+       {% if user.is_authenticated  %}
+      <div class="text"><button type="submit"><a href="/view">Invest in the new Ideas</a></button></div>
+      {% endif %}
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="{% static 'img/donate.jpg' %}" style="width:100%;height: 80vh">
+      <div class="text"> <a href="/donate">Donate</a>  <p>Help the people who are in need</p></div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+    
+
+<!--scrolling change ends here-->
+
+<!--login and signin-->
+<div class="wrapper">
     {% for message in messages %}
     <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
         <strong>Message:</strong>{{message}}
@@ -44,13 +119,40 @@
       
 </div>
 
+<!--login ends here-->
 
-<!-- now we are creting the some paragraph-->
-<!-- we are changing here-->
+
+
+
+
 <div class="content">
-    <img src="{% static 'img/index1.jpg' %}" alt="happy" class="image1">
+    
     <h2 class="head">Find it first on Cfund.</h2>
     <p>Cfund is where early adopters and innovation seekers find lively, imaginative tech before it hits the mainstream.</p>
+    <h2>Cfund helps</h2>
+
+
+    
+    <div class="row">
+        <div class="facilities-col">
+            <img src="{% static  'img/ideas.jpg' %}" alt="library">
+            <h3>Innivative Ideas</h3>
+          
+        </div>
+
+        <div class="facilities-col">
+            <img src="{% static  'img/education.jpg' %}" alt="library">
+            <h3>Educating the poor</h3>
+            
+        </div>
+
+        <div class="facilities-col">
+            <img src="{% static  'img/medical.jpg' %}" alt="library">
+            <h3>Medical Care </h3>
+           
+        </div>
+    </div>
+
 </div>
     
 </body>

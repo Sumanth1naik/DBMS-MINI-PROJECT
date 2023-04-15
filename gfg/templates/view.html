@@ -1,0 +1,51 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="{% static 'css/new1.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search for the idea</title>
+</head>
+<body>
+
+    <h1 style="text-align: center; font-size: 30px;">Entrepreneur List</h1>
+
+<div class="container" style="padding-top: 10px;">
+    <div class="table-wrapper; width:100%" >
+
+    <table class="table table-striped table-hover" style="border: 5px solid coral; width: 100%; padding: 5px;">
+        <thead >
+            <tr>
+                <th style ="border: 2px solid black;">Name</th>
+                <th style ="border: 2px solid black;">Email</th>
+                <th style ="border: 2px solid black;">Ideas</th>
+                <th style ="border: 2px solid black;">Phone</th>
+                <th style ="border: 2px solid black;">Actions</th>
+            </tr>
+        </thead>
+
+
+        <tbody style="border: 2px solid red;">
+            {% for i in emp %}
+            <tr style="text-align: center; ">
+               
+                <td style ="border: 1px solid black;">{{i.name}}</td>
+                <td style ="border: 1px solid black;">{{i.email}}</td>
+                <td style ="border: 1px solid black;">{{i.address}}</td>
+                <td style ="border: 1px solid black;">{{i.phone}}</td>
+                <td style ="border: 1px solid black;">
+                    <a href="/payment">Invest</a>
+                </td>
+            </tr>
+             {% endfor %}
+             
+        </tbody>
+    </table>
+    </div>
+</div>
+    
+</body>
+</html>
