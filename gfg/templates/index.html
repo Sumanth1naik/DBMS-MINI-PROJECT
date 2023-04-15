@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,13 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Authentication</title>
 
-    <link rel="stylesheet" href="static/css/style.css">
-
+    <!-- this link is sreting for checking the file in the normal server-->
     <link rel="stylesheet" href="/gfg/static/css/style.css">
   
     
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'style.css' %}">
+   
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
     <style>
         
@@ -29,7 +29,7 @@
     </div>
     {% endfor %}
 
-    <h3>Welcome to geeks for geeks</h3>
+    <h3>Welcome to Cfund</h3>
 
     {% if user.is_authenticated  %}
     <h3>Hello {{ fname }}</h3>
@@ -44,10 +44,11 @@
       
 </div>
 
-<div class="image"><img src="{% static 'happy.png' %}" alt="happy"> </div>
+
 <!-- now we are creting the some paragraph-->
 <!-- we are changing here-->
 <div class="content">
+    <img src="{% static 'img/index1.jpg' %}" alt="happy" class="image1">
     <h2 class="head">Find it first on Cfund.</h2>
     <p>Cfund is where early adopters and innovation seekers find lively, imaginative tech before it hits the mainstream.</p>
 </div>
