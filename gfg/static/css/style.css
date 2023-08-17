@@ -172,7 +172,7 @@ body {
 }
 
 .mobile-container {
-  
+  position: sticky;
   margin: auto;
   background-color: #555;
   width: 100%;
@@ -181,6 +181,7 @@ body {
 }
 
 .topnav {
+  position: sticky;
   overflow: hidden;
   background-color: #333;
   position: relative;
