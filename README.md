@@ -4,3 +4,69 @@ Welcome to our Crowdfunding Web App, a dynamic platform designed to empower indi
 1. Make sure you have django installed in your system
 2. install all the library
 3. After all the installation *py manage.py runserver* use this command to run the project
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Django Commands</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    code {
+      background-color: #f4f4f4;
+      padding: 2px 4px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-family: 'Courier New', monospace;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Django Commands</h2>
+
+  <ol>
+    <li>
+      <code>django-admin startproject projectname</code>
+      <p>Initializes a new Django project with the specified name.</p>
+    </li>
+    <li>
+      <code>cd projectname</code>
+      <p>Changes the current working directory to the Django project directory.</p>
+    </li>
+    <li>
+      <code>python manage.py startapp appname</code>
+      <p>Creates a new Django app within the project.</p>
+    </li>
+    <li>
+      <code>python manage.py migrate</code>
+      <p>Applies pending database migrations to update the database schema.</p>
+    </li>
+    <li>
+      <code>python manage.py createsuperuser</code>
+      <p>Prompts to create a superuser account for admin-level access.</p>
+    </li>
+    <li>
+      <code>python manage.py runserver</code>
+      <p>Launches the Django development server (default: <a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a>).</p>
+    </li>
+    <li>
+      <code>python manage.py makemigrations</code>
+      <p>Creates new database migrations based on changes to models.</p>
+    </li>
+    <li>
+      <code>python manage.py migrate appname</code>
+      <p>Applies app-specific migrations to update the database.</p>
+    </li>
+  </ol>
+
+</body>
+</html>
