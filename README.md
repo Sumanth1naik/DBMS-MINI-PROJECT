@@ -12,22 +12,7 @@ Welcome to our Crowdfunding Web App, a dynamic platform designed to empower indi
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Django Commands</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      line-height: 1.6;
-      max-width: 600px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    code {
-      background-color: #f4f4f4;
-      padding: 2px 4px;
-      border: 1px solid #ddd;
-      border-radius: 4px;
-      font-family: 'Courier New', monospace;
-    }
-  </style>
+
 </head>
 <body>
 
